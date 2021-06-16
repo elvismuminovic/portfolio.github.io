@@ -1,0 +1,411 @@
+/************** Basice Prefixes *************/
+
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 180%;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    color: #2e2e2e;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #34495E;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/*********************** HEADER ***********************/
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #34495E;
+    position: relative;
+}
+
+/******logo******/
+
+header .logo {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 350%;
+    padding-left: 1.5rem;
+    color: #a4a7aa;
+}
+
+
+/****Navigation*****/
+
+header {
+    position: relative;
+}
+
+header nav {
+    width: 30rem;
+
+}
+
+header .nav i.fa-bars {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #a4a7aa;
+    font-size: 1.1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 1px solid #a4a7aa;
+    padding-bottom: 10px;
+    color: #cccccc;
+}
+
+header nav .fa-bars{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 3rem;
+    color: #a4a7aa;
+    left: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 3rem;
+}
+
+
+/******************* Header-body-section ********************/
+
+.header-body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../img/testimonialBackground.jpg);
+    background-image:url(../img/testimonialBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/**** Header text ****/
+
+.hero-text-box {
+    position: relative;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #a4a7aa;
+    width: auto;
+    height: auto;
+    font-size: 5rem;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.hero-text-box p {
+    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 1px;
+}
+
+/********************* About **********************/
+
+.about {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about p {
+    text-align: justify;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0 auto;
+    word-spacing: 0.5px;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #393939;
+    margin-bottom: 70px;
+}
+
+/********************* Portfolio *********************/
+
+.portfolio {
+    overflow: auto;
+    background-color: #f5f5f5;
+    padding-bottom: 100px;
+
+}
+
+.portfolio .row .col {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*** Website names ***/
+
+.portfolio .row .col .web-name a {
+    text-decoration: none;
+    margin-top: -3px;
+    color: #a4a7aa;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.portfolio .row .col .web-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #34495E;
+}
+
+
+/***** portfolio imgs ******/
+
+.portfolio .row img {
+    width: 100%;
+    opacity: 0.7;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+    -webkit-transition: opacity, -webkit-transform 0.4s;
+    transition: opacity, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity;
+    transition: transform 0.4s, opacity, -webkit-transform 0.4s;
+}
+
+.portfolio .row img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/********************* Users Reviews **********************/
+
+.users-reviews {
+    overflow: auto;
+    padding-bottom: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#34495E), to(rgba(75, 75, 75, 0.47))), url('../img/developer.jpg');
+    background-image: linear-gradient(#34495E, rgba(75, 75, 75, 0.47)), url('../img/developer.jpg')
+}
+
+.users-reviews .row {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+.users-reviews .row .col {
+    overflow: visible;
+}
+
+.users-reviews h2 {
+    color: #cccccc;
+}
+
+.users-reviews h2:after {
+    display: block;
+    height: 2px;
+    background-color: #cccccc;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.users-reviews .row .col blockquote {
+    text-align: left;
+    margin: 0 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 150%;
+    font-style: italic;
+    color: #cccccc;
+}
+
+.users-reviews .row .col h4 {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 35px;
+    margin-right: 20px;
+    font-size: 130%;
+    font-weight: 400;
+    height: 50px;
+    position: relative;
+    top: -15px;
+    color: #cccccc;
+    ;
+
+}
+
+.users-reviews .row .col img {
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.users-reviews .row .col blockquote:before {
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    color: #cccccc;
+}
+
+/********************* Skillset **********************/
+
+.skillset {
+    padding-bottom: 100px;
+}
+
+.skillset .row .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.skillset .row .col i {
+    display: inline-block;
+    font-size: 500%;
+    padding: 50px;
+
+}
+
+
+/********************* Contact-form **********************/
+
+.contact-form {
+    background-color: #f5f5f5;
+    padding-bottom: 100px;
+}
+.contact-form .row .col{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contact-form .row h4, p{
+    text-align: center;
+}
+
+.contact-form .row i{
+    color:black;
+    display: inline-block;
+    font-size: 500%;
+}
+
+/********************* Contact-form **********************/
+
+footer {
+    background-color: #34495E;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    overflow: auto;
+}
+
+footer p {
+    color: #d6d9db;
+    font-weight: 100;
+}
